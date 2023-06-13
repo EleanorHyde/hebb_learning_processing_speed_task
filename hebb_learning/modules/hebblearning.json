@@ -1,0 +1,754 @@
+{
+    "allowEscapeKey": true,
+    "author": "Eleanor Hyde and Ellen Spencer",
+    "export": [
+        {
+            "$$hashKey": "object:779",
+            "auto": true,
+            "enabled": true,
+            "mode": "upload"
+        },
+        {
+            "$$hashKey": "object:780",
+            "enabled": false,
+            "mode": "download"
+        }
+    ],
+    "exportDelimiter": ",",
+    "exportFormat": "long",
+    "fullscreen": true,
+    "label": "hebblearning",
+    "moduleBackground": "",
+    "moduleForwardUrl": "",
+    "moduleHierarchy": {
+        "children": [
+            {
+                "blankInterval": 0,
+                "customType": "tatoolInstruction",
+                "fixationInterval": 0,
+                "hideMouseCursor": false,
+                "images": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": []
+                },
+                "name": "General_01",
+                "pages": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": [
+                        {
+                            "project": {
+                                "access": "private",
+                                "name": "hebb_learning"
+                            },
+                            "resourceName": "General_01.html",
+                            "resourceType": "instructions"
+                        },
+                        {
+                            "project": {
+                                "access": "private",
+                                "name": "hebb_learning"
+                            },
+                            "resourceName": "General_02.html",
+                            "resourceType": "instructions"
+                        }
+                    ]
+                },
+                "project": {
+                    "access": "public",
+                    "name": "tatool"
+                },
+                "tatoolType": "Executable"
+            },
+            {
+                "children": [
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "name": "Hebb_01",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_01.html",
+                                    "resourceType": "instructions"
+                                },
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_02.html",
+                                    "resourceType": "instructions"
+                                },
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_practice_03.html",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "countdown",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": 0,
+                                "customType": "colorBinding",
+                                "displayDuration": "200",
+                                "fixationInterval": 0,
+                                "maxSetSize": "6",
+                                "minSetSize": "6",
+                                "name": "colorBinding_practice",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "practice.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable"
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 4,
+                            "order": "sequential"
+                        },
+                        "label": "Practice",
+                        "name": "uhtx9h9y1e000000",
+                        "tatoolType": "List"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "name": "Hebb_practice_04",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_practice_04.html",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "countdown",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": 0,
+                                "customType": "colorBinding",
+                                "displayDuration": "200",
+                                "fixationInterval": 0,
+                                "maxSetSize": "6",
+                                "minSetSize": "6",
+                                "name": "colorBinding_cbinding1",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "keyLabels1.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable"
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 40,
+                            "order": "sequential"
+                        },
+                        "label": "Block 1",
+                        "name": "z2rj9gddh0e00000",
+                        "tatoolType": "List"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "name": "Hebb_05",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_05.html",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "countdown",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": 0,
+                                "customType": "colorBinding",
+                                "displayDuration": "200",
+                                "fixationInterval": 0,
+                                "maxSetSize": "6",
+                                "minSetSize": "6",
+                                "name": "colorBinding_cbinding2",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "keyLabels2.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable"
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 39,
+                            "order": "sequential"
+                        },
+                        "label": "Block 2",
+                        "name": "wesmlljaxf000000",
+                        "tatoolType": "List"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "name": "Hebb_end_06",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "Hebb_end_06.html",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    }
+                ],
+                "handlers": [],
+                "iterator": {
+                    "customType": "ListIterator",
+                    "numIterations": 1,
+                    "order": "sequential"
+                },
+                "label": "Hebb Task",
+                "name": "bibfd14xgum00000",
+                "tatoolType": "List"
+            },
+            {
+                "children": [
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "images": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": []
+                        },
+                        "name": "Speed_01",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "choice_shapes_shape_en_01.htm",
+                                    "resourceType": "instructions"
+                                },
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "choice_shapes_shape_en_02.htm",
+                                    "resourceType": "instructions"
+                                },
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "all_begin_practice_en.htm",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "118ywb15ufsc0000",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": "250",
+                                "cueEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                },
+                                "customType": "reactionTime",
+                                "displayCueDuration": "150",
+                                "displayDuration": "10000",
+                                "fixationInterval": 0,
+                                "hideMouseCursor": true,
+                                "jitterEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "jitterMax": "",
+                                "jitterMin": "",
+                                "name": "choice_shapes_shape_practice1",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "randomisation": "",
+                                "showKeys": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "status": {
+                                    "feedbackPanel": true
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "choice_shapes_shape_practice.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable",
+                                "timerEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                }
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 5,
+                            "order": "sequential"
+                        },
+                        "label": "Practice",
+                        "name": "c0axck6otw800000",
+                        "tatoolType": "List"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "images": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": []
+                        },
+                        "name": "Speed_02",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "choice_shapes_shape_03.htm",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "countdown",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": "100",
+                                "cueEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                },
+                                "customType": "reactionTime",
+                                "displayCueDuration": "150",
+                                "displayDuration": "10000",
+                                "fixationInterval": 0,
+                                "hideMouseCursor": true,
+                                "jitterEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "jitterMax": "",
+                                "jitterMin": "",
+                                "name": "choice_shapes_shape_test1",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "randomisation": "",
+                                "showKeys": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "choice_shapes_shape_test1.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable",
+                                "timerEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                }
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 80,
+                            "order": "sequential"
+                        },
+                        "label": "Speed 1",
+                        "name": "167bpukidwh00000",
+                        "tatoolType": "List"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "customType": "tatoolInstruction",
+                        "fixationInterval": 0,
+                        "images": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": []
+                        },
+                        "name": "Speed_03",
+                        "pages": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": [
+                                {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "resourceName": "choice_rt_halfway.htm",
+                                    "resourceType": "instructions"
+                                }
+                            ]
+                        },
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "blankInterval": 0,
+                        "countdown": "3",
+                        "customType": "tatoolCountdown",
+                        "fixationInterval": 0,
+                        "goText": "Go!",
+                        "interval": "500",
+                        "name": "countdown",
+                        "project": {
+                            "access": "public",
+                            "name": "tatool"
+                        },
+                        "tatoolType": "Executable"
+                    },
+                    {
+                        "children": [
+                            {
+                                "blankInterval": "100",
+                                "cueEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                },
+                                "customType": "reactionTime",
+                                "displayCueDuration": "150",
+                                "displayDuration": "10000",
+                                "fixationInterval": 0,
+                                "hideMouseCursor": true,
+                                "jitterEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "jitterMax": "",
+                                "jitterMin": "",
+                                "name": "choice_shapes_shape_test2",
+                                "project": {
+                                    "access": "private",
+                                    "name": "hebb_learning"
+                                },
+                                "randomisation": "",
+                                "showKeys": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": false
+                                },
+                                "stimuliFile": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Resource",
+                                    "resourceName": "choice_shapes_shape_test2.csv",
+                                    "resourceType": "stimuli"
+                                },
+                                "stimuliPath": {
+                                    "project": {
+                                        "access": "private",
+                                        "name": "hebb_learning"
+                                    },
+                                    "propertyType": "Path",
+                                    "resourceName": "",
+                                    "resourceType": "stimuli"
+                                },
+                                "tatoolType": "Executable",
+                                "timerEnabled": {
+                                    "propertyType": "Boolean",
+                                    "propertyValue": true
+                                }
+                            }
+                        ],
+                        "handlers": [],
+                        "iterator": {
+                            "customType": "ListIterator",
+                            "numIterations": 80,
+                            "order": "sequential"
+                        },
+                        "label": "Speed 2",
+                        "name": "ynwag8h0xc000000",
+                        "tatoolType": "List"
+                    }
+                ],
+                "handlers": [],
+                "iterator": {
+                    "customType": "ListIterator",
+                    "numIterations": 1,
+                    "order": "sequential"
+                },
+                "label": "Speed",
+                "name": "6eftasv17e000000",
+                "tatoolType": "List"
+            },
+            {
+                "blankInterval": 0,
+                "customType": "tatoolInstruction",
+                "fixationInterval": 0,
+                "hideMouseCursor": false,
+                "images": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": []
+                },
+                "name": "end_of_tasks",
+                "pages": {
+                    "propertyType": "ArrayResource",
+                    "propertyValue": [
+                        {
+                            "project": {
+                                "access": "private",
+                                "name": "hebb_learning"
+                            },
+                            "resourceName": "end_of_tasks.htm",
+                            "resourceType": "instructions"
+                        }
+                    ]
+                },
+                "project": {
+                    "access": "public",
+                    "name": "tatool"
+                },
+                "tatoolType": "Executable"
+            }
+        ],
+        "iterator": {
+            "customType": "ListIterator",
+            "numIterations": 1,
+            "order": "sequential"
+        },
+        "label": "Task List",
+        "tatoolType": "List"
+    },
+    "moduleMaxSessions": null,
+    "name": "CS:GO Hebb Learning"
+}

@@ -1,0 +1,5 @@
+condition,phase,block,trial_number,hebb_trial,item0_color,item0_position,item1_color,item1_position,item2_color,item2_position,item3_color,item3_position,item4_color,item4_position,item5_color,item5_position
+condition,practice,0,0,no,white,1,black,17,blue,34,orange,5,cyan,47,lime,22
+condition,practice,0,1,no,red,48,orange,22,cyan,3,white,7,black,27,lime,17
+condition,practice,0,2,no,black,16,lime,43,red,45,magenta,2,cyan,26,yellow,40
+condition,practice,0,3,no,orange,28,black,37,magenta,4,yellow,49,lime,15,red,18

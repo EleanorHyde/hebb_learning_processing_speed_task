@@ -1,0 +1,54 @@
+[  
+   {  
+	 "customType":"tatoolSurvey",
+	 "description":"Presents survey questions"
+   },
+   {  
+      "customType":"colorBinding",
+      "description":"Measures binding between colors and their locations in a grid",
+      "customProperties":[  
+         {  
+            "propertyName":"stimuliPath",
+            "propertyType":"Path"
+         },
+         {  
+            "propertyName":"stimuliFile",
+            "propertyType":"Resource"
+         },
+         {  
+            "propertyName":"displayDuration",
+            "propertyType":"String"
+         },
+         {  
+            "propertyName":"setSize",
+            "propertyType":"String"
+         }
+      ]
+   },
+   {  
+      "customType":"doorsRecognition",
+      "description":"Measures recognition of pictures of doors after a delay",
+      "customProperties":[  
+         {  
+            "propertyName":"stimuliPath",
+            "propertyType":"Path"
+         },
+         {  
+            "propertyName":"stimuliFile",
+            "propertyType":"Resource"
+         },
+         {  
+            "propertyName":"encodingDuration",
+            "propertyType":"String"
+         },
+         {  
+            "propertyName":"blankDuration",
+            "propertyType":"String"
+         },
+         {  
+            "propertyName":"nMemoranda",
+            "propertyType":"String"
+         }
+      ]
+   }
+]

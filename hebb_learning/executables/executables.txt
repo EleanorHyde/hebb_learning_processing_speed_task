@@ -1,0 +1,3 @@
+Executable
+
+[{"customType":"colorBinding","description":"ColorBinding Task","customProperties":[{"propertyName":"stimuliPath","propertyType":"Path"}]},{"customType":"reactionTime","description":"Adapted tatoolShifting task with pre-stimulus jitter","customProperties":[{"propertyName":"stimuliPath","propertyType":"Path"},{"propertyName":"stimuliFile","propertyType":"Resource"},{"propertyName":"showKeys","propertyType":"Boolean"},{"propertyName":"timerEnabled","propertyType":"Boolean"},{"propertyName":"displayDuration"},{"propertyName":"cueEnabled","propertyType":"Boolean"},{"propertyName":"displayCueDuration"},{"propertyName":"jitterEnabled","propertyType":"Boolean"},{"propertyName":"jitterMin"},{"propertyName":"jitterMax"},{"propertyName":"randomisation"}]}]

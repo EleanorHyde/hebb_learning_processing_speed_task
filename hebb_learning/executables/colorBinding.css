@@ -1,0 +1,176 @@
+.colorBinding_emptyCell, .colorBinding_emptyCellStatic {
+  font-size: 300%;
+  background-color: transparent;
+  border: 0px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+  outline: 0px solid #999;
+}
+.colorBinding_fillCell, .colorBinding_fillCellStatic {
+  font-size: 300%;
+  background-color: #0073cf;
+  border: 1px solid #0073cf;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+.colorBinding_stimulusCell, .colorBinding_stimulusCellStatic {
+  font-size: 300%;
+  background-color: transparent;
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+  outline: 0px solid #999;
+}
+.colorBinding_probeCell, .colorBinding_probeCellStatic {
+  font-size: 300%;
+  background-color: transparent;
+  border: 2px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+  outline: 0px solid #999;
+}
+.colorBinding_recallCell, .colorBinding_recallCellStatic {
+  font-size: 300%;
+  background-color: #f7f7f7;
+  border: 1px solid #d9d9d9;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+.colorBinding_clickCell, .colorBinding_clickCellStatic {
+  font-size: 300%;
+  background-color: #b2b2b2;
+  border: 1px solid #b2b2b2;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_whiteCell, .colorBinding_whiteCellStatic {
+  font-size: 300%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_blackCell, .colorBinding_blackCellStatic {
+  font-size: 300%;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_blueCell, .colorBinding_blueCellStatic {
+  font-size: 300%;
+  background-color: rgb(0, 0, 255);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_cyanCell, .colorBinding_cyanCellStatic {
+  font-size: 300%;
+  background-color: rgb(0, 255, 255);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_limeCell, .colorBinding_limeCellStatic {
+  font-size: 300%;
+  background-color: rgb(0, 255, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_yellowCell, .colorBinding_yellowCellStatic {
+  font-size: 300%;
+  background-color: rgb(255, 255, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_orangeCell, .colorBinding_orangeCellStatic {
+  font-size: 300%;
+  background-color: rgb(255, 128, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_redCell, .colorBinding_redCellStatic {
+  font-size: 300%;
+  background-color: rgb(255, 0, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_magentaCell, .colorBinding_magentaCellStatic {
+  font-size: 300%;
+  background-color: rgb(255, 0, 255);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_greyCell, .colorBinding_greyCellStatic {
+  font-size: 300%;
+  background-color: rgb(112, 112, 112);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+.colorBinding_greenCell, .colorBinding_greenCellStatic {
+  font-size: 300%;
+  background-color: rgb(0, 100, 0);
+  border: 1px solid rgb(112, 112, 112);
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+  padding: 5px;
+}
+
+#canvas {
+}
+/** 
+ * IMPORTANT: Use the prefix "tatoolContinuous" for the Executable name in the Editor to avoid flickering due to different background color.
+ */
+body[class*='colorBinding'] {
+	background-color:rgb(128,128,0128) !important; 
+}
