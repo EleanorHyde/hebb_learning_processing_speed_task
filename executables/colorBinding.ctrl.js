@@ -60,15 +60,19 @@ tatool
       }
 
     // enable click input for recall phase
-      function recallPhase() {
+    function recallPhase() {
       service.setRecallStimulus();
       service.inputService.show();
       service.startTime = service.inputService.enable();
       }
 
-      function recallPhaseV2(probe) {
+    function recallPhaseV2(probe) {
         service.setRecallStimulusV2(probe);
         service.inputService.show();
+        service.timer.start()
+        if(probe === 0){
+          service.trial = {};
+        }
         service.startTime = service.inputService.enable();
       }
 
@@ -80,12 +84,16 @@ tatool
         }
 
         if (this.probeResponse <= 6) {
+          service.timer.stop();
    
           service.inputService.disable();
           service.inputService.hide();
           service.mainGridService.hide();
 
+          var reactionTimePropName = 'reactionTime' + this.probeResponse;
+          service.endTime = timing;
           service.processResponseV2(input.givenResponse, this.probeResponse);
+          service.trial[reactionTimePropName] = service.endTime - service.startTime;
 
           service.mainGridService.clear();
           service.mainGridService.show();

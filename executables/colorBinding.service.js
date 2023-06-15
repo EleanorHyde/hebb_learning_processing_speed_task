@@ -32,6 +32,7 @@ tatool
       this.timerDisplayMemoranda = timerUtils.createTimer(this.displayDuration, true, this);
 
       this.timerDisplayFeedback = timerUtils.createTimer(FEEDBACK_DURATION_DEFAULT, true, this);
+      this.timer = timerUtils.createTimer(this.displayDuration, true, this);
 
       // disable input by default
       this.enableInput = false;
@@ -269,27 +270,27 @@ tatool
       this.setupInputKeys(this.stimulus);
     };
 
-      ColorBinding.prototype.setRecallStimulusV2 = function (probe) {
-        for (var i = 0; i < this.setSize; i++) {
-          if (this.trialLocationList[i] == this.trialLocationList[probe]) {
-            this.mainGridService.addCellAtPosition(this.trialLocationList[probe], {
-              stimulusValue: '',
-              stimulusValueType: 'text',
-              gridCellClass: 'colorBinding_probeCell'
-            });
-          } else {
-            this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
-              gridCellClass: 'colorBinding_recallCell',
-              stimulusValue: '',
-              stimulusValueType: 'text'
-            });
-          }
+    ColorBinding.prototype.setRecallStimulusV2 = function (probe) {
+      for (var i = 0; i < this.setSize; i++) {
+        if (this.trialLocationList[i] == this.trialLocationList[probe]) {
+          this.mainGridService.addCellAtPosition(this.trialLocationList[probe], {
+            stimulusValue: '',
+            stimulusValueType: 'text',
+            gridCellClass: 'colorBinding_probeCell'
+          });
+        } else {
+          this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
+            gridCellClass: 'colorBinding_recallCell',
+            stimulusValue: '',
+            stimulusValueType: 'text'
+          });
         }
+      }
 
-        this.mainGridService.refresh();
+      this.mainGridService.refresh();
 
-        this.setupInputKeys(this.stimulus);
-      };
+      this.setupInputKeys(this.stimulus);
+    };
 
 
     ColorBinding.prototype.getPhase = function() {
@@ -315,51 +316,56 @@ tatool
 
 
 
-      ColorBinding.prototype.processResponseV2 = function (givenResponse, probe) {
-        if (probe == 1) {
-           this.trial = {};
-          this.trial.score = 0;
-          this.trial.locations = this.stimulus['gridPositionList'];
-          this.trial.colors = this.stimulus['colorList'];
-          this.trial.correctResponses = [];
-        }
-        var correctResponse = executableUtils.getNext(this.stimulus['colorList'], probe - 1);
-        if (correctResponse == givenResponse) {
-          this.trial.score++;
-          this.trial.correctResponses.push(this.trial.locations[probe - 1]);
-          this.trial['Response_' + probe + '_Score'] = 1;
-        } else {
-          this.trial['Response_' + probe + '_Score'] = 0;
-        }
-        this.trial['Response_' + probe + '_Colour'] = givenResponse;
-      };
+    ColorBinding.prototype.processResponseV2 = function (givenResponse, probe) {
+      if (probe == 1) {
+        this.trial.score = 0;
+        this.correctResponses = [];
+      }
+   
+      this['endTime' + probe] = this.endTime;
+      var correctResponse = executableUtils.getNext(this.stimulus['colorList'], probe - 1);
+      var stimulusLocationPropName = "stimulusLocation" + probe;
+      var correctResponsePropName = "correctResponse" + probe;
+      this.trial[correctResponsePropName] = correctResponse;
+      this.trial[stimulusLocationPropName] = this.stimulus['gridPositionList'][probe - 1];
+      if (correctResponse == givenResponse) {
+        this.trial.score++;
+        this.correctResponses.push(this.stimulus['gridPositionList'][probe - 1]);
+        this.trial['score' + probe ] = 1; //score1-6
+      } else {
+        this.trial['score' + probe ] = 0; //score-1-6
+      }
+      console.log("correct"+probe+": " + correctResponse + ", given: " + givenResponse + ", " + this.trial['score' + probe ]);
+      this.trial['givenResponse' + probe] = givenResponse; //givenResponse1-6
+      this.trial['reactionTime' + probe] = this.endTime - this.startTime;
+    };
 
-      ColorBinding.prototype.saveTrial = function (probe) {
-        if (probe == 6) {
-          this.trial.score = this.trial.score / 6;
-          return dbUtils.saveTrial(this.trial);
+    ColorBinding.prototype.saveTrial = function (probe) {
+      if (probe == 6) {
+        this.trial.score = this.trial.score / 6;
+        return dbUtils.saveTrial(this.trial);
+      }
+    }
+
+    ColorBinding.prototype.createFeedback = function () {
+      for (var i = 0; i < this.setSize; i++) {
+        if (this.correctResponses.includes(this.trialLocationList[i])) {
+          this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
+            stimulusValue: '',
+            stimulusValueType: 'text',
+            gridCellClass: 'colorBinding_greenCell'
+          });
+        } else {
+          this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
+            gridCellClass: 'colorBinding_greyCell',
+            stimulusValue: '',
+            stimulusValueType: 'text'
+          });
         }
       }
 
-      ColorBinding.prototype.createFeedback = function () {
-        for (var i = 0; i < this.setSize; i++) {
-          if (this.trial.correctResponses.includes(this.trialLocationList[i])) {
-            this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
-              stimulusValue: '',
-              stimulusValueType: 'text',
-              gridCellClass: 'colorBinding_greenCell'
-            });
-          } else {
-            this.mainGridService.addCellAtPosition(this.trialLocationList[i], {
-              gridCellClass: 'colorBinding_greyCell',
-              stimulusValue: '',
-              stimulusValueType: 'text'
-            });
-          }
-        }
-
-        this.mainGridService.refresh();
-      };
+      this.mainGridService.refresh();
+    };
 
 
 
