@@ -82,7 +82,9 @@ tatool
       for(var prop in trialConfig){
         if(prop.includes("position")){
           this.locationList.push(trialConfig[prop]);
-        }
+        } else if (prop.includes("hebb_trial")){
+          this.stimulus.hebb_trial = trialConfig[prop];
+        } 
       }
       for(var prop in trialConfig){
         if(prop.includes("color")){
@@ -116,7 +118,6 @@ tatool
       this.memCounter = 0;
       this.recallCounter = 0;
       this.recallPositions = [];
-
       this.mainGridService.clear().refresh();
     };
 
@@ -328,6 +329,7 @@ tatool
       var correctResponsePropName = "correctResponse" + probe;
       this.trial[correctResponsePropName] = correctResponse;
       this.trial[stimulusLocationPropName] = this.stimulus['gridPositionList'][probe - 1];
+      this.trial.hebb_trial = this.stimulus.hebb_trial;
       if (correctResponse == givenResponse) {
         this.trial.score++;
         this.correctResponses.push(this.stimulus['gridPositionList'][probe - 1]);
