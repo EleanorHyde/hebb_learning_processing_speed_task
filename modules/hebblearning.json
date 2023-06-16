@@ -319,7 +319,7 @@
                         "handlers": [],
                         "iterator": {
                             "customType": "ListIterator",
-                            "numIterations": 39,
+                            "numIterations": 40,
                             "order": "sequential"
                         },
                         "label": "Block 2",
