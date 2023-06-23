@@ -1,3 +1,7 @@
+#tatoolInput .tatoolKey, #tatoolInput .tatoolKey:active {
+    margin: 0 1% 0 1%;
+}
+
 .colorBinding_emptyCell, .colorBinding_emptyCellStatic {
   font-size: 300%;
   background-color: transparent;
@@ -172,5 +176,5 @@
  * IMPORTANT: Use the prefix "tatoolContinuous" for the Executable name in the Editor to avoid flickering due to different background color.
  */
 body[class*='colorBinding'] {
-	background-color:rgb(128,128,0128) !important; 
+	background-color:rgb(128,128, 128) !important; 
 }
