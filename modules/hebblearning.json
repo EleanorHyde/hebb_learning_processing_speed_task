@@ -1,15 +1,15 @@
 {
-    "allowEscapeKey": true,
-    "author": "Eleanor Hyde and Ellen Spencer",
+    "allowEscapeKey": false,
+    "author": "Eleanor Hyde, Ellen Spencer",
     "export": [
         {
-            "$$hashKey": "object:779",
+            "$$hashKey": "object:607",
             "auto": true,
             "enabled": true,
             "mode": "upload"
         },
         {
-            "$$hashKey": "object:780",
+            "$$hashKey": "object:608",
             "enabled": false,
             "mode": "download"
         }
@@ -17,9 +17,9 @@
     "exportDelimiter": ",",
     "exportFormat": "long",
     "fullscreen": true,
-    "label": "hebblearning",
+    "label": "hebbLearning",
     "moduleBackground": "",
-    "moduleForwardUrl": "",
+    "moduleForwardUrl": "https://sheffieldpsychology.eu.qualtrics.com/jfe/form/SV_06BadrSxA6jKORE",
     "moduleHierarchy": {
         "children": [
             {
@@ -38,7 +38,7 @@
                         {
                             "project": {
                                 "access": "private",
-                                "name": "hebb_learning"
+                                "name": "uos-csgo"
                             },
                             "resourceName": "General_01.html",
                             "resourceType": "instructions"
@@ -46,7 +46,7 @@
                         {
                             "project": {
                                 "access": "private",
-                                "name": "hebb_learning"
+                                "name": "uos-csgo"
                             },
                             "resourceName": "General_02.html",
                             "resourceType": "instructions"
@@ -65,6 +65,10 @@
                         "blankInterval": 0,
                         "customType": "tatoolInstruction",
                         "fixationInterval": 0,
+                        "images": {
+                            "propertyType": "ArrayResource",
+                            "propertyValue": []
+                        },
                         "name": "Hebb_01",
                         "pages": {
                             "propertyType": "ArrayResource",
@@ -72,7 +76,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_01.html",
                                     "resourceType": "instructions"
@@ -80,7 +84,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_02.html",
                                     "resourceType": "instructions"
@@ -88,7 +92,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_practice_03.html",
                                     "resourceType": "instructions"
@@ -127,12 +131,12 @@
                                 "name": "colorBinding_practice",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "practice.csv",
@@ -141,7 +145,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -171,7 +175,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_practice_04.html",
                                     "resourceType": "instructions"
@@ -210,12 +214,12 @@
                                 "name": "colorBinding_cbinding1",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "keyLabels1.csv",
@@ -224,7 +228,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -254,7 +258,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_05.html",
                                     "resourceType": "instructions"
@@ -293,12 +297,12 @@
                                 "name": "colorBinding_cbinding2",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "keyLabels2.csv",
@@ -307,7 +311,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -337,7 +341,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "Hebb_end_06.html",
                                     "resourceType": "instructions"
@@ -378,7 +382,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "choice_shapes_shape_en_01.htm",
                                     "resourceType": "instructions"
@@ -386,7 +390,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "choice_shapes_shape_en_02.htm",
                                     "resourceType": "instructions"
@@ -394,7 +398,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "all_begin_practice_en.htm",
                                     "resourceType": "instructions"
@@ -443,7 +447,7 @@
                                 "name": "choice_shapes_shape_practice1",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "randomisation": "",
                                 "showKeys": {
@@ -456,7 +460,7 @@
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "choice_shapes_shape_practice.csv",
@@ -465,7 +469,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -503,7 +507,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "choice_shapes_shape_03.htm",
                                     "resourceType": "instructions"
@@ -552,7 +556,7 @@
                                 "name": "choice_shapes_shape_test1",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "randomisation": "",
                                 "showKeys": {
@@ -562,7 +566,7 @@
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "choice_shapes_shape_test1.csv",
@@ -571,7 +575,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -609,7 +613,7 @@
                                 {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "resourceName": "choice_rt_halfway.htm",
                                     "resourceType": "instructions"
@@ -658,7 +662,7 @@
                                 "name": "choice_shapes_shape_test2",
                                 "project": {
                                     "access": "private",
-                                    "name": "hebb_learning"
+                                    "name": "uos-csgo"
                                 },
                                 "randomisation": "",
                                 "showKeys": {
@@ -668,7 +672,7 @@
                                 "stimuliFile": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Resource",
                                     "resourceName": "choice_shapes_shape_test2.csv",
@@ -677,7 +681,7 @@
                                 "stimuliPath": {
                                     "project": {
                                         "access": "private",
-                                        "name": "hebb_learning"
+                                        "name": "uos-csgo"
                                     },
                                     "propertyType": "Path",
                                     "resourceName": "",
@@ -727,7 +731,7 @@
                         {
                             "project": {
                                 "access": "private",
-                                "name": "hebb_learning"
+                                "name": "uos-csgo"
                             },
                             "resourceName": "end_of_tasks.htm",
                             "resourceType": "instructions"
@@ -750,5 +754,5 @@
         "tatoolType": "List"
     },
     "moduleMaxSessions": null,
-    "name": "CS:GO Hebb Learning"
+    "name": "CS:GO and cognitive skills"
 }
