@@ -1,4 +1,4 @@
-#Hebb Learning and Processing Speed task
+# Hebb Learning and Processing Speed task
 
 Generated for Tatool-web (https://www.tatool-web.com/) using JavaScript, HTML and CSS. The Hebbian Learning task with visuospatial stimuli is based on that used in Musfeld, Oberauer & Souza (2023). The Processing speed task with shape stimuli has been used often by Claudia von Bastian and is based on that used in the ESRC-funded ORA project: "Cognitive training effects across the adult lifespan: a diffusion modelling approach."
 
